@@ -24,22 +24,6 @@ const Header = () => (
                 >
                   Dashboard
                 </Link>
-
-                <Link
-                  to="/employees/"
-                  activeClassName="px-3 py-2 rounded-md text-sm font-medium text-white bg-red-900 focus:outline-none focus:text-white focus:bg-red-700"
-                  className="px-3 py-2 rounded-md text-sm font-medium text-red-300 hover:text-white hover:bg-red-700 focus:outline-none focus:text-white focus:bg-red-700"
-                >
-                  Employees
-                </Link>
-
-                <Link
-                  to="/calendar/"
-                  activeClassName="px-3 py-2 rounded-md text-sm font-medium text-white bg-red-900 focus:outline-none focus:text-white focus:bg-red-700"
-                  className="px-3 py-2 rounded-md text-sm font-medium text-red-300 hover:text-white hover:bg-red-700 focus:outline-none focus:text-white focus:bg-red-700"
-                >
-                  Calendar
-                </Link>
               </div>
             </div>
           </div>

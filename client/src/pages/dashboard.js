@@ -2,9 +2,12 @@ import React, { useState } from 'react';
 import Layout from '../components/Layout';
 import { useSessionStorage } from 'beautiful-react-hooks'
 import SEO from '../components/SEO'
+import firebase from 'gatsby-plugin-firebase';
 
 const DashboardPage = () => {
   const [employees, setEmployees] = useSessionStorage("employees", [])
+
+  console.log(firebase.auth().settings)
 
   const handleData = data => {
     if (typeof data === "object") {

@@ -4,7 +4,7 @@ import SEO from "../components/SEO";
 import LoginForm from "../components/pages/index/LoginForm";
 
 const IndexPage = () => (
-  <Layout>
+  <Layout noHeader>
     <SEO title="Login" />
     <LoginForm />
   </Layout>

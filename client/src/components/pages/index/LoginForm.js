@@ -13,13 +13,12 @@ const LoginForm = () => {
       .auth()
       .signInWithPopup(new firebase.auth.GoogleAuthProvider())
       .then(result => {
-        console.log(result)
+        navigate('/dashboard/');
       })
-    // navigate('/dashboard/');
   }
   
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 -mt-10">
       <div className="max-w-md w-full">
         <div>
           <img
@@ -31,7 +30,7 @@ const LoginForm = () => {
             Login
           </h2>
         </div>
-        <form className="mt-8" onSubmit={() => onSubmit()}>
+        <form className="mt-8" onSubmit={(e) => onSubmit(e)}>
           <input type="hidden" name="remember" value="true" />
           <div className="rounded-md shadow-sm">
             <div>
