@@ -1,34 +1,15 @@
 import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header/Header"
 import '../assets/css/main.css'
 import Footer from "./Footer"
+import Spinner from "./Spinner"
 
-const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`;
-
-const Layout = ({ children }) => {
-  const data = useStaticQuery(query);
-
-  return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <main>{children}</main>
-      <Footer />
-    </>
-  )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+const Layout = ({ children, loading }) => (
+  <>
+    <Header />
+    <main className="p-5">{loading ? children : <Spinner />}</main>
+    <Footer />
+  </>
+)
 
 export default Layout
