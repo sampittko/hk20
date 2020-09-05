@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import vismaLogoPath from '../../../assets/img/logo.jpg';
 import { navigate } from 'gatsby';
+import firebase from "gatsby-plugin-firebase"
 
 const LoginForm = () => {
   const [email] = useState('admin@workbuddy.tech');
@@ -8,7 +9,13 @@ const LoginForm = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    navigate('/dashboard/');
+    firebase
+      .auth()
+      .signInWithPopup(new firebase.auth.GoogleAuthProvider())
+      .then(result => {
+        console.log(result)
+      })
+    // navigate('/dashboard/');
   }
   
   return (

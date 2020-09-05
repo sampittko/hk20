@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "visma-assistant-288611",
+  "private_key_id": "ea18cc8d05131a05704ec94282c2ebd6b90524d2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDXbZEv9DKz2bkm\njTtqeX/nLkm/A6xZ9W/cqJ20mMCVkoGyqdCGBD6tB+/UfAWLbHRmMk9u8TVgQRoF\nxlytgLeioOlOyL6khsaWnnVTq6vHbEXMrgJv8rbGGZ11qZBZCsl+zWnsAtvgMJcu\n4zA4r+45vpVcQiYgHMUyrVjThbTRxfM6pKP1NTSwthBYQ/Cq4HDjXtn2/bjj6xuu\nuCGCpkUvi3t2mU//tryLi8RN9Us2uPNWRVALtx+7AIhuDACnLk+tCgxV0oCbfpZl\npvp8cNTNGti+6FHC79e6uSDaJB2xhQzDmXkGhBzmp/LPS7gZxKCOKLxIcBQPhe34\nBCiLcdp1AgMBAAECggEABZUDD5U0y8s8THREEgi5mIxvAGzrG4j2upGAm0w1T/WJ\nYySaUMwDBxRvEaLwY9dOFtMpPWyGSmBgI76AP/CsvCE477/XjMd/QCo1S73liBfV\nS9ibGzp/TkJzUuKvaQHqDF1B6DR/bQo6nfjovXdK5XfQ7Us7gKvY15d9TJHTiHdG\nlJC89vKlVhoSR4T9r91Nbh+Ih/d/XXWjPt3pmtfHyZL3+6AEpRmGCu4sOGkqNzuC\n9FXOgWWUBGWSA38/f2QdVPlIBpCFXzLoQmzL816FrXNazZpKdkfTU3UdvZtnSFcy\nGsLgyC2SdkNCYwjqJq6rrbMeZZaIDHzFmBHBySo4ywKBgQD/6ffFBNfgyfbhVm5b\nCZ2+6bnsaXxH1Cyl0uYy+1Ipg4W5/uvwXhxmmxy3ogd4Sd5Bf/ExF/PdII6uk6hJ\nzBfdTtX34YqNPTHZms0w8gTFtrHybQqS0BqxpczylntcW7Et2dtx3PyEu0+PosMY\nLY0HUZHUJ93s8/+xPGjMmsIzLwKBgQDXgB0gHFEf1HHKfjAnlBi3if5gErb7yKog\n3BKVPuKMR5V2gUzNVb/zoai9PQtAYsHko2K+HUgvYuetHsQLez5WQ8ej0Pxb1KW2\nPCGp9WJHOKAWI6wJ4tW159To/FuDFrEBXbj4qBTz01lLYujGk2BfXi/t7NLuC6Wu\nf44dal2zmwKBgQDDP22DCoPuBAjwuTGvEXIh406vmXdxkeaSiYqKIQb5l1fipSS7\nmgHPIs7RJ7TNSIZisMuC6kRrVFinxw4hZ65Zcbl7yr8brTGoVRvyGOQdOJshW6Iy\nisWi/d2Uw8zQlUBjvBBaGgEq/4HfE44Hl1E+4TQCinweOba+MVm/qN87jwKBgQDC\nrsShK7PGM6CRNKrANrSVqx6ZII8aq8+2W9qV5fe4jzrhkjIWFm+Q4+yS+UDe69kK\neuhLpByAYrO13GNzk+Ve/WCwB67ULyl9lpk696nPecJ1/cgALmKvMT9RNBpgNPG3\nsDnYudAj7j1vM23jZ2TbAzX9lcOAthj5qdZzkJISHQKBgQCIoseqv7RWSeRCQJAd\nimdkTDy5TrBtu1aqZjbZjPbMJF7vAXYzxpWA2ycVnmfMa0n+VAncOMUodbflVZ66\nmeTjqLO5OvqFW/cIDyjn8ihI4Jz0WhuZjEhaNjkgmmHzT+aC6+Vd7IB84dAdvGzy\nzMo6D8SzxVazq3Fkd+8nqDSWPQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "admin-823@visma-assistant-288611.iam.gserviceaccount.com",
+  "client_id": "102972377950281038371",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/admin-823%40visma-assistant-288611.iam.gserviceaccount.com"
+}

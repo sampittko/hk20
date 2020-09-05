@@ -6,11 +6,26 @@ module.exports = {
     description: `Control Center for Visma Assistant.`,
     author: `@sampittko`,
     defaultUser: {
-      name: 'admin',
-      password: 'admin'
-    }
+      name: "admin",
+      password: "admin",
+    },
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-firebase",
+      options: {
+        credentials: {
+          apiKey: "AIzaSyC9jibjI7WjEZ3W3w5KrmjeTPnb0P7674E",
+          authDomain: "visma-assistant-ebadf.firebaseapp.com",
+          databaseURL: "https://visma-assistant-ebadf.firebaseio.com",
+          projectId: "visma-assistant-ebadf",
+          storageBucket: "visma-assistant-ebadf.appspot.com",
+          messagingSenderId: "196861438027",
+          appId: "1:196861438027:web:b1a14f974523cd0f7d85ce",
+          measurementId: "G-TSD67EXGYG",
+        },
+      },
+    },
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-purgecss`,
