@@ -12,7 +12,7 @@ const EmployeePage = () => {
 
   useEffect(() => {
     if (!firebase.app()) {
-      firebaseConfig = gatsbyConfig.plugins.filter(
+      const firebaseConfig = gatsbyConfig.plugins.filter(
         plugin => plugin.resolve !== `gatsby-plugin-firebase`
       )
       firebase.initializeApp(firebaseConfig.options)
