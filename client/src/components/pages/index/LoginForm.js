@@ -4,8 +4,8 @@ import { navigate } from 'gatsby';
 import firebase from "gatsby-plugin-firebase"
 
 const LoginForm = ({ onLogin }) => {
-  const [email] = useState('admin@workbuddy.tech');
-  const [password] = useState('admin');
+  const [email] = useState("johndoe@doejohn.com")
+  const [password] = useState('test');
 
   const onSubmit = (e) => {
     e.preventDefault();

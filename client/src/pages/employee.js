@@ -21,7 +21,7 @@ const EmployeePage = () => {
     console.log(firebase.app())
       firestore()
         .collection(`users`)
-        .doc(`jTiTuEcjcgQwSnGFK8HU8mufXbU2`)
+        .doc(`73FH6fG2VchJG0spb058Wl3WHLt1`)
         .collection(`events`)
         .get()
         .then(querySnapshot => {

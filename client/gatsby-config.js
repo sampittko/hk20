@@ -5,10 +5,6 @@ module.exports = {
     title: `Visma Assistant Admin`,
     description: `Control Center for Visma Assistant.`,
     author: `@sampittko`,
-    defaultUser: {
-      name: "admin",
-      password: "admin",
-    },
   },
   plugins: [
     {
