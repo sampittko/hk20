@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import firebase from 'gatsby-plugin-firebase';
 import { firestore } from 'firebase';
 import SEO from '../components/SEO';
 import Layout from '../components/Layout';
