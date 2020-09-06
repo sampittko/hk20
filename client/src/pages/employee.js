@@ -54,7 +54,7 @@ const EmployeePage = () => {
                 <span className="underline">Patrik Koscelanský</span> added the following event to
                 their calendar
               </span>
-              <div className="cursor-pointer w-full bg-red-100 rounded-full">
+              <div className="w-full bg-red-100 rounded-full">
                 <div className="flex w-full items-center p-2 pl-2 relative">
                   <div className="w-6 flex flex-col items-center">
                     <div className="ml-10 flex relative w-5 h-5 bg-red-500 justify-center items-center m-1 mr-2 w-4 h-4 mt-1 rounded-full " />

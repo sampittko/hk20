@@ -5,7 +5,7 @@ import Footer from "./Footer"
 
 const Layout = ({ children, noHeader, employee }) => (
   <>
-    {!noHeader && <Header employee />}
+    {!noHeader && <Header employee={employee} />}
     <main>{children}</main>
     <Footer />
   </>
