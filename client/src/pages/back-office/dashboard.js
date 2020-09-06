@@ -18,8 +18,8 @@ const DashboardPage = () => {
         .set({
           title: event,
           description: `Lorem ipsum`,
-          start: moment().add("1", "months").unix(),
-          end: moment().add("3", "months").unix(),
+          start: new Date(moment().add("1", "months").unix() * 1000),
+          end: new Date(moment().add("3", "months").unix() * 1000),
         })
     }
 
