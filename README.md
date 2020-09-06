@@ -1,2 +1,6 @@
-# hk20
-Hack Kosice 2020
+# Visma Assistant
+Demo available at www.workbuddy.tech
+
+### Available Chatbot Questions
+
+1. 

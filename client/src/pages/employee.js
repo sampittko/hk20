@@ -6,6 +6,7 @@ import moment from 'moment'
 import firebase from 'gatsby-plugin-firebase'
 
 import gatsbyConfig from '../../gatsby-config'
+import UISwitcher from '../components/UISwitcher';
 
 const EmployeePage = () => {
   const [events, setEvents] = useState([]);
@@ -103,6 +104,7 @@ const EmployeePage = () => {
         className="absolute bottom-0 right-0 border-l-2 border-gray-800"
         src="https://console.dialogflow.com/api-client/demo/embedded/49008b7a-8a8a-4b35-9b5a-692e89b1135a"
       />
+      <UISwitcher activeUI="employee" />
     </Layout>
   )
 };

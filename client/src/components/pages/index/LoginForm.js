@@ -3,7 +3,7 @@ import vismaLogoPath from '../../../assets/img/logo.jpg';
 import { navigate } from 'gatsby';
 import firebase from "gatsby-plugin-firebase"
 
-const LoginForm = () => {
+const LoginForm = ({ onLogin }) => {
   const [email] = useState('admin@workbuddy.tech');
   const [password] = useState('admin');
 
@@ -13,8 +13,7 @@ const LoginForm = () => {
       .auth()
       .signInWithPopup(new firebase.auth.GoogleAuthProvider())
       .then((result) => {
-        console.log(result)
-        navigate('/back-office/dashboard/');
+        onLogin();
       })
   }
   
