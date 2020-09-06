@@ -3,11 +3,21 @@ import { firestore } from 'firebase';
 import SEO from '../components/SEO';
 import Layout from '../components/Layout';
 import moment from 'moment'
+import firebase from 'gatsby-plugin-firebase'
+
+import gatsbyConfig from '../../gatsby-config'
 
 const EmployeePage = () => {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
+    if (!firebase.app()) {
+      firebaseConfig = gatsbyConfig.plugins.filter(
+        plugin => plugin.resolve !== gatsby - plugin - firebase
+      )
+      firebase.initializeApp(firebaseConfig.options)
+    }
+    console.log(firebase.app())
       firestore()
         .collection(`users`)
         .doc(`jTiTuEcjcgQwSnGFK8HU8mufXbU2`)
@@ -48,7 +58,7 @@ const EmployeePage = () => {
       <div className="h-full w-full">
         <div className="absolute bg-white top-100 z-0 w-full lef-0 rounded max-h-select overflow-y-auto">
           {events.map((event, i) => (
-            <div key={i} className="flex flex-col w-full px-6">
+            <div key={i} className="flex flex-col w-full px-6 pt-5">
               <span className="pl-16 pb-2 text-xs">
                 <span className="underline">Patrik Koscelanský</span> added the following event to
                 their calendar
