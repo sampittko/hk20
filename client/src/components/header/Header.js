@@ -2,7 +2,7 @@ import React from "react"
 import vismaLogoPath from "../../assets/img/logo.jpg"
 import { Link } from "gatsby"
 
-const Header = () => (
+const Header = ({ employee }) => (
   <header>
     <nav className="bg-red-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -15,17 +15,26 @@ const Header = () => (
                 alt="Visma logo"
               />
             </div>
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-4">
-                <Link
-                  to="/dashboard/"
-                  activeClassName="px-3 py-2 rounded-md text-sm font-medium text-white bg-red-900 focus:outline-none focus:text-white focus:bg-red-700"
-                  className="px-3 py-2 rounded-md text-sm font-medium text-red-300 hover:text-white hover:bg-red-700 focus:outline-none focus:text-white focus:bg-red-700"
-                >
-                  Dashboard
-                </Link>
+            {!employee && (
+              <div className="hidden md:block">
+                <div className="ml-10 flex items-baseline space-x-4">
+                  <Link
+                    to="/dashboard/"
+                    activeClassName="px-3 py-2 rounded-md text-sm font-medium text-white bg-red-900 focus:outline-none focus:text-white focus:bg-red-700"
+                    className="px-3 py-2 rounded-md text-sm font-medium text-red-300 hover:text-white hover:bg-red-700 focus:outline-none focus:text-white focus:bg-red-700"
+                  >
+                    Dashboard
+                  </Link>
+                  <Link
+                    to="/employees/"
+                    activeClassName="px-3 py-2 rounded-md text-sm font-medium text-white bg-red-900 focus:outline-none focus:text-white focus:bg-red-700"
+                    className="px-3 py-2 rounded-md text-sm font-medium text-red-300 hover:text-white hover:bg-red-700 focus:outline-none focus:text-white focus:bg-red-700"
+                  >
+                    Team
+                  </Link>
+                </div>
               </div>
-            </div>
+            )}
           </div>
           <div className="hidden md:block">
             <div className="ml-4 flex items-center md:ml-6">
@@ -63,16 +72,6 @@ const Header = () => (
                     />
                   </button>
                 </div>
-                {/* <!--
-                Profile dropdown panel, show/hide based on dropdown state.
-
-                Entering: "transition ease-out duration-100"
-                  From: "transform opacity-0 scale-95"
-                  To: "transform opacity-100 scale-100"
-                Leaving: "transition ease-in duration-75"
-                  From: "transform opacity-100 scale-100"
-                  To: "transform opacity-0 scale-95"
-              --> */}
               </div>
             </div>
           </div>
@@ -107,53 +106,6 @@ const Header = () => (
                 />
               </svg>
             </button>
-          </div>
-        </div>
-      </div>
-
-      {/* Mobile menu, toggle classNamees based on menu state.
-
-      Open: "block", closed: "hidden" */}
-      <div className="hidden md:hidden">
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <a
-            href="#"
-            className="block px-3 py-2 rounded-md text-base font-medium text-white bg-red-900 focus:outline-none focus:text-white focus:bg-red-700"
-          >
-            Dashboard
-          </a>
-
-          <a
-            href="#"
-            className="block px-3 py-2 rounded-md text-base font-medium text-red-300 hover:text-white hover:bg-red-700 focus:outline-none focus:text-white focus:bg-red-700"
-          >
-            Employees
-          </a>
-
-          <a
-            href="#"
-            className="block px-3 py-2 rounded-md text-base font-medium text-red-300 hover:text-white hover:bg-red-700 focus:outline-none focus:text-white focus:bg-red-700"
-          >
-            Calendar
-          </a>
-        </div>
-        <div className="pt-4 pb-3 border-t border-red-700">
-          <div className="flex items-center px-5 space-x-3">
-            <div className="flex-shrink-0">
-              <img
-                className="h-10 w-10 rounded-full"
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                alt=""
-              />
-            </div>
-            <div className="space-y-1">
-              <div className="text-base font-medium leading-none text-white">
-                Tom Cook
-              </div>
-              <div className="text-sm font-medium leading-none text-red-400">
-                tom@example.com
-              </div>
-            </div>
           </div>
         </div>
       </div>

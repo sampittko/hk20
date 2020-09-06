@@ -12,8 +12,9 @@ const LoginForm = () => {
     firebase
       .auth()
       .signInWithPopup(new firebase.auth.GoogleAuthProvider())
-      .then(result => {
-        navigate('/dashboard/');
+      .then((result) => {
+        console.log(result)
+        navigate('/back-office/dashboard/');
       })
   }
   
