@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from '../../components/Layout';
 import SEO from '../../components/SEO'
 import { useLocalStorage } from 'beautiful-react-hooks'
 import UISwitcher from '../../components/UISwitcher';
 import { firestore } from 'firebase'
 import moment from 'moment'
+import firebase from 'gatsby-plugin-firebase'
 
 const DashboardPage = () => {
   const [dialog, setDialog] = useState(false)
@@ -15,6 +16,15 @@ const DashboardPage = () => {
   const [activeStep, setActiveStep] = useState(1);
   const [latestTrainingPhrase, setLatestTrainingPhrase] = useState(``); 
 
+  useEffect(() => {
+    if (!firebase.app()) {
+      const firebaseConfig = gatsbyConfig.plugins.filter(
+        plugin => plugin.resolve !== `gatsby-plugin-firebase`
+      )
+      firebase.initializeApp(firebaseConfig.options)
+    }
+  }, []);
+  
   const addEvent = () => {
     if (dialog) {
       firestore()

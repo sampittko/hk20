@@ -18,7 +18,7 @@ const EmployeePage = () => {
       )
       firebase.initializeApp(firebaseConfig.options)
     }
-    console.log(firebase.app())
+    // console.log(firebase.app())
       firestore()
         .collection(`users`)
         .doc(`73FH6fG2VchJG0spb058Wl3WHLt1`)
